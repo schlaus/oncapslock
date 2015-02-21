@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>oncapslock example with jquery</title>
+  <script type="text/javascript">
+  /*
+   * oncapslock event plugin v1.0.0
+   * https://github.com/schlaus/oncapslock
+   * 
+   * A simple, lightweight JavaScript plugin for detecting
+   * user input with caps lock on, with jQuery support.
+   * 
+   * Copyright 2015 Klaus Karkia
+   * Released under the MIT license
+   * http://schlaus.mit-license.org/
+   *
+   */
+  document.onkeypress=function(e){var t,n,o,c,r,i;if(e=e||window.event,n=e.which||e.keyCode,t=String.fromCharCode(n),r=!1,e.shiftKey?r=e.shiftKey:e.modifiers&&(r=!!(4&e.modifiers)),r&&t.toUpperCase()!==t&&t.toLowerCase()===t||!r&&t.toLowerCase()!==t&&t.toUpperCase()===t){if(i=e.srcElement||e.target,"undefined"!=typeof jQuery&&null!==jQuery)return void jQuery(i).trigger("capslock");"function"==typeof Event?(o=!0,c=new Event("capslock")):document.createEvent?(o=!0,c=document.createEvent("HTMLEvents"),c.initEvent("capslock",!0,!0)):(o=!1,c=document.createEventObject(),c.eventType="capslock"),c.eventName="capslock","function"==typeof i.oncapslock&&i.oncapslock(c),o?i.dispatchEvent(c):i.fireEvent("onpropertychange",c)}};
+  </script>  
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+	<script type="text/javascript">
+
+    $(function() {
+      $('#example').on('capslock', function(e) {
+        alert("You have caps lock on!");
+      });
+    });
+    
+	</script>
+</head>
+<body>
+	<form>
+		Type something here: <input type="text" id="example" name="example">
+	</form>
+</body>
+</html>
