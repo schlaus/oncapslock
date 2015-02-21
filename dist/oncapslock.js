@@ -1,5 +1,5 @@
 /*
- * oncapslock event plugin v1.0.0
+ * oncapslock event plugin v1.0.1
  * https://github.com/schlaus/oncapslock
  * 
  * A simple, lightweight JavaScript plugin for detecting
