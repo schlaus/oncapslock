@@ -1,0 +1,29 @@
+{
+  "name": "oncapslock",
+  "version": "1.0.0",
+  "title":  "oncapslock",
+  "description": "A simple, lightweight JavaScript event plugin for detecting user input with caps lock on, with support for jQuery.",
+  "keywords": [
+    "capslock",
+    "caps",
+    "lock",
+    "jquery",
+    "plugin"
+  ],
+  "author": {
+    "name": "Klaus Karkia",
+    "url": "https://github.com/schlaus"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://schlaus.mit-license.org"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "bugs": "https://github.com/schlaus/oncapslock/issues",
+  "homepage": "https://github.com/schlaus/oncapslock",
+  "docs": "https://github.com/schlaus/oncapslock#readme"
+}
