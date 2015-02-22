@@ -1,5 +1,5 @@
 {
-  "name": "jquery.oncapslock",
+  "name": "oncapslock",
   "version": "1.0.1",
   "description": "A simple, lightweight JavaScript event plugin for detecting user input with caps lock on, with support for jQuery.",
   "keywords": [
